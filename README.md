@@ -25,7 +25,8 @@ I could make it super complicated and probably have a lot of fun but also be som
 > It's fun to see what all the cool kids on the playground are
 > doing, but at the end of the day, that's probably not going to help
 > you finish your art project.
-	>   -- Paul McNamee - 2018
+
+-- Paul McNamee 2018
 
 Yea I just quoted my own internal thought, you'll get over it, otherwise you probably would have stopped reading this by now.
 
