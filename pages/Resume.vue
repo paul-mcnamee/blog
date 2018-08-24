@@ -1,0 +1,9 @@
+<template>
+    <v-container>
+        <div>
+            <h1>
+                Download.
+            </h1>
+        </div>
+    </v-container>    
+</template>
