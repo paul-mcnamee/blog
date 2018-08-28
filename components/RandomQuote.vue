@@ -1,28 +1,13 @@
 <template>
-    <div>
-        <p><i>"{{quote}}"</i> -{{author}}</p>
+    <div class="pt-2 px-2">
+      <p><i>"{{$store.state.quote}}"</i></p>
+      <p> -{{$store.state.author}}</p>
     </div>
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
-  async asyncData() {
-    let data = await axios.get(`http://quotes.rest/qod.json`);
-    debugger;
-    console.log("data = " + data);
-    if (data.success.total === 1) {
-      quoteObject = data.contents.quotes[0];
-      return {
-        quote: quoteObject.quote,
-        author: quoteObject.author
-      };
-    }
-  },
-  props: {
-    quote: "",
-    author: ""
-  }
+  middleware: "quote"
 };
 </script>
+

@@ -1,14 +1,15 @@
 <template>
-    <div>
-        <random-quote></random-quote>
-    </div>
+    <RandomQuote/>
 </template>
 
 <script>
-import RandomQuote from "@/components/RandomQuote";
+import RandomQuote from "@/components/RandomQuote"
+
 export default {
-  components: {
-    RandomQuote
-  }
-};
+
+components: {
+  RandomQuote
+}
+
+}
 </script>
