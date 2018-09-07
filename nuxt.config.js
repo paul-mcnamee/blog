@@ -84,19 +84,20 @@ module.exports = {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
-  // generate: {
-  //   routes: function () {
-  //     var fs = require('fs');
-  //     var files = fs.readdirSync('/blog/static/posts/');
-  //     console.log("files: " + files)
-  //     // for (var i = 0; i < files.length; i++) {
-  //     //   files[i] = "/post/" + files[i];
-  //     // }
-  //     return [
-  //       ...files
-  //     ]
-  //   }
-  // },
+  generate: {
+    fallback: true,
+    //   routes: function () {
+    //     var fs = require('fs');
+    //     var files = fs.readdirSync('/blog/static/posts/');
+    //     console.log("files: " + files)
+    //     // for (var i = 0; i < files.length; i++) {
+    //     //   files[i] = "/post/" + files[i];
+    //     // }
+    //     return [
+    //       ...files
+    //     ]
+    //   }
+  },
 
   /*
    ** Build configuration

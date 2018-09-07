@@ -7,6 +7,13 @@
 
 <script>
 export default {
+  computed: {
+    quoteExists() {
+      return this.$store.getters.quoteExists;
+    }
+  },
+// TODO: use asyncData to test if the axios call is working...
+
   middleware: "quote"
 };
 </script>

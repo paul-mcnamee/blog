@@ -5,7 +5,7 @@
         clipped 
         v-model="drawer" 
         app
-        class="mb-5"
+        class="mb-5 elevation-3"
         >
             <div class="text-xs-center mt-5 mb-4">
                 <v-avatar size="125px">
@@ -16,7 +16,7 @@
                 <span v-if="$store.state.quote.length > 0">
                     <v-divider class="mx-5 my-4"></v-divider>
                     <div class="subheading text-xs-center grey--text mt-1 mb-3">
-                        <random-quote></random-quote>
+                        <RandomQuote/>
                     </div>
                 </span>
             </div>
@@ -36,21 +36,11 @@
             </v-container>
             <v-footer fixed app class="mb-5 elevation-4">
                 <v-layout layout row justify-center align-center>
-                    <v-btn icon>
-                        <a class="social" href="mailto:paulmc121@gmail.com"><v-icon>email</v-icon></a>
-                    </v-btn>
-                    <v-btn icon>
-                        <a class="social" href="https://github.com/paul-mcnamee"><v-icon>fab fa-github</v-icon></a>
-                    </v-btn>
-                    <v-btn icon>
-                        <a class="social" href="https://www.linkedin.com/in/paul-j-mcnamee/"><v-icon>fab fa-linkedin</v-icon></a>
-                    </v-btn>
-                    <v-btn icon>
-                        <a class="social" href="https://twitter.com/pmcnamee_"><v-icon>fab fa-twitter</v-icon></a>
-                    </v-btn>
-                    <v-btn icon>
-                        <a class="social" href="https://stackoverflow.com/users/9683122/pmcnamee"><v-icon>fab fa-stack-overflow</v-icon></a>
-                    </v-btn>
+                    <a class="social mx-2" href="mailto:paulmc121@gmail.com"><v-icon>email</v-icon></a>
+                    <a class="social mx-2" href="https://github.com/paul-mcnamee"><v-icon>fab fa-github</v-icon></a>
+                    <a class="social mx-2" href="https://www.linkedin.com/in/paul-j-mcnamee/"><v-icon>fab fa-linkedin</v-icon></a>
+                    <a class="social mx-2" href="https://twitter.com/pmcnamee_"><v-icon>fab fa-twitter</v-icon></a>
+                    <a class="social mx-2" href="https://stackoverflow.com/users/9683122/pmcnamee"><v-icon>fab fa-stack-overflow</v-icon></a>
                 </v-layout>
             </v-footer>
         
@@ -81,6 +71,7 @@
 <script>
 import TheFooter from "@/components/TheFooter";
 import RandomQuote from "@/components/RandomQuote";
+
 export default {
   data: () => ({
     drawer: true,
