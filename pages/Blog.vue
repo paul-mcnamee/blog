@@ -40,6 +40,7 @@ export default {
   data() {
     return {
       title: "Your Logo",
+      // TODO: get the posts from a json file in the static folder?
       posts: [
         {
           title: "Fusce ullamcorper tellus",

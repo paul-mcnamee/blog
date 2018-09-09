@@ -2,7 +2,7 @@
     <v-container>
         <div>
             <h1>
-                Download.
+                <a href="resume/Paul_McNamee_Resume.pdf" download>Resume Download</a>
             </h1>
         </div>
     </v-container>    
