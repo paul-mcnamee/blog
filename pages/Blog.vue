@@ -5,29 +5,14 @@
       <v-flex>
         <v-container grid-list-xl fluid>
           <v-layout row wrap>
-            <v-flex v-for="post in posts" :key="post.id" xs12 md6 lg4>
-              <nuxt-link :to="`/post/${post.id}`">
-              <!-- <nuxt-link :to="post.id"> -->
-                <v-card hover>
-                  <v-card-media class="white--text" height="170px" :src="post.imgUrl">
-                    <v-container fill-height >
-                      <v-layout>
-                        <v-flex xs12 align-end d-flex>
-                          <span class="headline">{{ post.title }}</span>
-                        </v-flex>
-                      </v-layout>
-                    </v-container>
-                  </v-card-media>
-                  <v-card-text>
-                    {{ post.content }}
-                  </v-card-text>
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn flat class="blue--text">Read More</v-btn>
-                  </v-card-actions>
-                </v-card>
-              </nuxt-link>
-            </v-flex>
+              <Post
+                v-for="post in posts"
+                :key="post.id"
+                :post="post" 
+                :title="post.title"
+                :imgUrl="post.imgUrl"
+                :description="post.description"
+              ></Post>
           </v-layout>
         </v-container>
       </v-flex>
@@ -36,15 +21,57 @@
 </template>
 
 <script>
+import Post from '@/components/Post'
+// import fs from 'fs'
+// import path from 'path'
+
 export default {
+  components: {
+    Post,
+  },
+  // methods: {
+  //   getPosts: function() {
+  //     var postArray = [];
+
+  //     const postFolder = path.join(__static, '/posts');
+  //     let fileContents = fs.readFileSync(path.join(postFolder, '/2.json'), 'utf8');
+  //     console.log(fileContents);
+
+  //     fs.readdirSync(postFolder).forEach(file => {
+  //       console.log(file);
+        
+  //       if (file){
+  //           // get the info from the json file for the post
+  //         $.getJSON(file, function (json) {
+  //           var array = [];
+  //           for (var key in json) {
+  //               if (json.hasOwnProperty(key)) {
+  //                   var item = json[key];
+  //                   array.push({
+  //                       name: item.Name,
+  //                       surname: item.Surname,
+  //                       mobile: item.mobile,
+  //                       email: item.email
+  //                   });            
+  //               }
+  //           }
+  //       });
+  //       }
+  //     })
+
+  //     return postArray;
+  //   },
+  // },
+  // computed: {
+  //   posts: this.getPosts();
+  // },
   data() {
     return {
-      title: "Your Logo",
-      // TODO: get the posts from a json file in the static folder?
+      // TODO: get the posts from json files in the static folder?
       posts: [
         {
           title: "Fusce ullamcorper tellus",
-          content:
+          description:
             "Fusce ullamcorper tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultrices maximus. Donec non tellus non neque pellentesque fermentum. Aenean in pellentesque urna.",
           imgUrl:
             "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/drop.jpg",
@@ -52,7 +79,7 @@ export default {
         },
         {
           title: "Fusce ullamcorper tellus",
-          content:
+          description:
             "Fusce ullamcorper tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultrices maximus. Donec non tellus non neque pellentesque fermentum. Aenean in pellentesque urna.",
           imgUrl:
             "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/drop.jpg",
@@ -60,7 +87,7 @@ export default {
         },
         {
           title: "Fusce ullamcorper tellus",
-          content:
+          description:
             "Fusce ullamcorper tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultrices maximus. Donec non tellus non neque pellentesque fermentum. Aenean in pellentesque urna.",
           imgUrl:
             "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/drop.jpg",
@@ -68,7 +95,7 @@ export default {
         },
         {
           title: "Fusce ullamcorper tellus",
-          content:
+          description:
             "Fusce ullamcorper tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultrices maximus. Donec non tellus non neque pellentesque fermentum. Aenean in pellentesque urna.",
           imgUrl:
             "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/drop.jpg",
@@ -76,7 +103,7 @@ export default {
         },
         {
           title: "Donec vitae suscipit lectus, a luctus diam.",
-          content:
+          description:
             "Donec vitae suscipit lectus, a luctus diam. Proin vitae felis gravida, lobortis massa sit amet, efficitur erat. Morbi vel ultrices nisi.",
           imgUrl:
             "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg",
@@ -84,7 +111,7 @@ export default {
         },
         {
           title: "Donec vitae suscipit lectus, a luctus diam.",
-          content:
+          description:
             "Donec vitae suscipit lectus, a luctus diam. Proin vitae felis gravida, lobortis massa sit amet, efficitur erat. Morbi vel ultrices nisi.",
           imgUrl:
             "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg",
@@ -92,7 +119,7 @@ export default {
         },
         {
           title: "Donec vitae suscipit lectus, a luctus diam.",
-          content:
+          description:
             "Donec vitae suscipit lectus, a luctus diam. Proin vitae felis gravida, lobortis massa sit amet, efficitur erat. Morbi vel ultrices nisi.",
           imgUrl:
             "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg",
@@ -100,7 +127,7 @@ export default {
         },
         {
           title: "Donec vitae suscipit lectus, a luctus diam.",
-          content:
+          description:
             "Donec vitae suscipit lectus, a luctus diam. Proin vitae felis gravida, lobortis massa sit amet, efficitur erat. Morbi vel ultrices nisi.",
           imgUrl:
             "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg",
@@ -108,7 +135,7 @@ export default {
         },
         {
           title: "Donec vitae suscipit lectus, a luctus diam.",
-          content:
+          description:
             "Donec vitae suscipit lectus, a luctus diam. Proin vitae felis gravida, lobortis massa sit amet, efficitur erat. Morbi vel ultrices nisi.",
           imgUrl:
             "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg",
@@ -116,7 +143,7 @@ export default {
         },
         {
           title: "Vestibulum condimentum quam",
-          content:
+          description:
             "At sagittis sapien vulputate. Vivamus laoreet lacus id magna rutrum dapibus. Donec vel pellentesque arcu. Maecenas mollis odio tempus felis elementum commodo.",
           imgUrl:
             "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/plane.jpg",

@@ -1,5 +1,4 @@
 const pkg = require('./package')
-
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
@@ -53,7 +52,8 @@ module.exports = {
    ** Global CSS
    */
   css: [
-    'vuetify/src/stylus/main.styl'
+    'vuetify/src/stylus/main.styl',
+    'assets/main.css'
   ],
 
   /*
@@ -86,17 +86,6 @@ module.exports = {
 
   generate: {
     fallback: true,
-    //   routes: function () {
-    //     var fs = require('fs');
-    //     var files = fs.readdirSync('/blog/static/posts/');
-    //     console.log("files: " + files)
-    //     // for (var i = 0; i < files.length; i++) {
-    //     //   files[i] = "/post/" + files[i];
-    //     // }
-    //     return [
-    //       ...files
-    //     ]
-    //   }
   },
 
   /*
