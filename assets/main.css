@@ -5,3 +5,28 @@
   .page-enter, .page-leave-to {
     opacity: 0;
   }
+
+  .nav-link {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-weight: inherit;
+    font-size: 1.5rem;
+  }
+  
+  .social :hover,
+  .nav-link a:hover,
+  .nav-link a:active,
+  .nav-link.nuxt-link-exact-active,
+  .nav-link.nuxt-link-exact-active a {
+    color: #4db6ac;
+  }
+  
+  .social {
+    text-decoration: none;
+    color: white;
+  }

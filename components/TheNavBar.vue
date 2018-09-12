@@ -51,16 +51,6 @@
             <span class="title"></span>
         </v-toolbar-title>
         <v-spacer></v-spacer>
-        <!-- <v-layout row align-center style="max-width: 650px">
-            <v-text-field
-            placeholder="Search..."
-            single-line
-            append-icon="search"
-            @click:append="() => {}"
-            color="white"
-            hide-details
-            ></v-text-field>
-        </v-layout> -->
         <v-btn icon>
             <v-icon>more_vert</v-icon>
         </v-btn>

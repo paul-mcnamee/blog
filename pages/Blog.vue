@@ -29,42 +29,6 @@ export default {
   components: {
     Post,
   },
-  // methods: {
-  //   getPosts: function() {
-  //     var postArray = [];
-
-  //     const postFolder = path.join(__static, '/posts');
-  //     let fileContents = fs.readFileSync(path.join(postFolder, '/2.json'), 'utf8');
-  //     console.log(fileContents);
-
-  //     fs.readdirSync(postFolder).forEach(file => {
-  //       console.log(file);
-        
-  //       if (file){
-  //           // get the info from the json file for the post
-  //         $.getJSON(file, function (json) {
-  //           var array = [];
-  //           for (var key in json) {
-  //               if (json.hasOwnProperty(key)) {
-  //                   var item = json[key];
-  //                   array.push({
-  //                       name: item.Name,
-  //                       surname: item.Surname,
-  //                       mobile: item.mobile,
-  //                       email: item.email
-  //                   });            
-  //               }
-  //           }
-  //       });
-  //       }
-  //     })
-
-  //     return postArray;
-  //   },
-  // },
-  // computed: {
-  //   posts: this.getPosts();
-  // },
   data() {
     return {
       // TODO: get the posts from json files in the static folder?

@@ -28,3 +28,8 @@ export default {
   props: ['post']
 }
 </script>
+
+<style scoped>
+
+</style>
+
