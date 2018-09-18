@@ -24,7 +24,7 @@
     "ajv": "^6.5.3",
     "babel-eslint": "^8.2.1",
     "cross-env": "^5.0.1",
-    "eslint": "^5.4.0",
+    "eslint": "^5.5.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-vue": "^4.7.1",
     "stylus": "^0.54.5",

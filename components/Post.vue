@@ -29,7 +29,12 @@ export default {
 }
 </script>
 
+
+
 <style scoped>
+a {
+  all: unset;
+}
 
 </style>
 

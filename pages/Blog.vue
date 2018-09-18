@@ -29,6 +29,7 @@ export default {
   components: {
     Post,
   },
+
   data() {
     return {
       // TODO: get the posts from json files in the static folder?
@@ -120,7 +121,5 @@ export default {
 </script>
 
 <style scoped>
-a {
-  all: unset;
-}
+
 </style>

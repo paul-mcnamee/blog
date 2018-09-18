@@ -113,6 +113,9 @@ module.exports = {
           })
         ]
       }
+
+      const vueLoader = config.module.rules.find((rule) => rule.loader === 'vue-loader')
+      vueLoader.options.transformToRequire['img'] = ['src', 'data-src']
     }
   }
 }
