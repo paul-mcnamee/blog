@@ -37,9 +37,9 @@
 .progress-image{
     z-index: 2;
     object-fit: contain;
-    height: 70px;
+    height: 65px;
     align-content: space-around;
-    padding: 0px;
+    padding: 2px;
 }
 
 .progress-text{
