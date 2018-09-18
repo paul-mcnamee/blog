@@ -35,17 +35,11 @@
                 </v-list>
             </v-container>
             <v-footer fixed app class="mb-5 elevation-4">
-                <v-layout layout row justify-center align-center>
-                    <a class="social mx-2" href="mailto:Paul@FourthMouse.com"><v-icon>email</v-icon></a>
-                    <a class="social mx-2" href="https://github.com/paul-mcnamee"><v-icon>fab fa-github</v-icon></a>
-                    <a class="social mx-2" href="https://www.linkedin.com/in/paul-j-mcnamee/"><v-icon>fab fa-linkedin</v-icon></a>
-                    <a class="social mx-2" href="https://twitter.com/pmcnamee_"><v-icon>fab fa-twitter</v-icon></a>
-                    <a class="social mx-2" href="https://stackoverflow.com/users/9683122/pmcnamee"><v-icon>fab fa-stack-overflow</v-icon></a>
-                </v-layout>
+                <Social/>
             </v-footer>
         
         </v-navigation-drawer>
-    <v-toolbar color="primary" dark fixed dense clipped-left scroll-off-screen app>
+    <v-toolbar color="primary" dark fixed dense clipped-left scroll-off-screen app class="elevation-4">
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
         <v-toolbar-title class="mr-5 align-center">
             <span class="title"></span>
@@ -61,6 +55,7 @@
 <script>
 import TheFooter from "@/components/TheFooter";
 import RandomQuote from "@/components/RandomQuote";
+import Social from "@/components/Social"
 
 export default {
   data: () => ({
@@ -79,7 +74,8 @@ export default {
   },
   components: {
     TheFooter,
-    RandomQuote
+    RandomQuote,
+    Social
   }
 };
 </script>

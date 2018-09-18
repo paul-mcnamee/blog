@@ -13,17 +13,15 @@
             <v-layout align-center justify-center column fill-height>
                 <v-flex xs12>
                     <img :src="img" class="progress-image mt2">
-                </v-flex>
-                <v-flex xs12 class="progress-text">
-                    {{ name }} 
+                    <br>
+                    <span class="progress-text">
+                        <center>
+                            {{name}}
+                        </center>
+                    </span>
                 </v-flex>
             </v-layout>
         </v-flex>
-
-        <!-- <v-img 
-            :src="img"
-            class="progress-image"></v-img> -->
-        
         </v-progress-circular>
     </v-flex>
    
@@ -43,8 +41,9 @@
 }
 
 .progress-text{
-    font-size: 18px;
+    font-size: 14px;
     color: white;
+    padding: 2px;
 }
 </style>
 

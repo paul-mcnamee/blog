@@ -2,5 +2,6 @@
     "id": "2",
     "title": "second post",
     "description": "second post description",
-    "imgUrl": ""
+    "imgUrl": "",
+    "labels": ["test", "blog", "post"]
 }
