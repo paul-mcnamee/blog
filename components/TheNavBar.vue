@@ -67,9 +67,10 @@ export default {
     drawer: true,
     items: [
       { text: "Home", link: "/" },
+      { text: "Blog", link: "/Blog" },
+      { text: "Skills", link: "/Skills" },
       { text: "Resume", link: "/Resume" },
       { text: "Portfolio", link: "/Portfolio" },
-      { text: "Blog", link: "/Blog" },
       { text: "About", link: "/About" }
     ]
   }),

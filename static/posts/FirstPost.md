@@ -1,6 +1,6 @@
 # About
 
-[Hi, I'm Paul](https://www.youtube.com/watch?v=_Fx6eCGsXMw). I am currently 28 years old, and live in Denver Colorado. I have had a huge passion for computers, programming, gaming, mechanical things, and basically anything relating to how things work since I was pretty young (sorry for taking everything apart as a child Mom and Dad...). 28 years into my life and I finally decided to make a personal website. Until this point I felt that it was not necessary, but as I continue to educate people and become a mentor at work and outside of work more and more, I thought it would be useful to document some of it for the rest of the world to enjoy instead of just the people I am immediately surrounded by. I have always been a hard worker but also a smart worker, I automate the stuff I don't really want to do, or figure out a way to have someone or something else do it. I love programming, but my interests definitely extend way beyond computers. Fun fact, I was heavily considering doing ceramics full time as a career path. I also like to hike, fish, snowboard, make beer (and drink it), and lots of other stuff which I hope to also incorporate into this blog.
+[Hi, I'm Paul](https://www.youtube.com/watch?v=_Fx6eCGsXMw). I am currently 28 years old, and live in Denver Colorado. I have had a huge passion for computers, programming, gaming, mechanical things, and basically anything relating to how things work since I was pretty young (sorry for taking everything apart as a child Mom and Dad...). 28 years into my life and I finally decided to make a personal website. Until this point I felt that it was not necessary, but as I continue to educate people and become a mentor at work and outside of work, I thought it would be useful to document some of it for the rest of the world to enjoy instead of just the people I am immediately surrounded by. I have always been a hard worker but also a smart worker, I automate the stuff I don't really want to do, or figure out a way to have someone or something else do it. I love programming, but my interests definitely extend way beyond computers. Fun fact, I was heavily considering doing ceramics full time as a career path. I also like to hike, fish, snowboard, make beer (and drink it), and lots of other stuff which I hope to also incorporate into this blog.
 
 ## Education / Work
 I have held a job since I was 12 years old and started caddying, and prior to that I would occasionally rake leaves, shovel snow, or cut grass for some spending money so I could buy the things I wanted. I definitely value these experiences a lot, I was able to learn fairly young how the world worked, and definitely feel that it helped me to absorb a lot more information from people around me, and from school in general. Our family was not too well off, so I knew I would either need scholarships or money for college if I wanted to get a good job in the field of my choice, which at that age was probably something related to computers. I learned html and css pretty early on thanks to the CMITES program at CMU. I found web design pretty fascinating at first, which definitely lead to more intense *real* programming later on.
@@ -30,12 +30,5 @@ I could make it super complicated and probably have a lot of fun but also be som
 
 Yea I just quoted my own internal thought, you'll get over it, otherwise you probably would have stopped reading this by now.
 
-#### Focus on Content
-I decided to focus more on the content instead of learning something new when I found that github pages are free and you can use [jekyll](https://jekyllrb.com/) for pushing the content, but for now I will use [this cool online markdown editor](stackedit.io) for the initial readme and probably just go to bed now.
 
 **Aaaaaannnndddd POST!**
-
-# blog
-
-> A blog where Paul McNamee writes stuff.
-
