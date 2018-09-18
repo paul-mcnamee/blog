@@ -12,7 +12,7 @@
         <v-flex>
             <v-layout align-center justify-center column fill-height>
                 <v-flex xs12>
-                    <img :src="img" class="progress-image">
+                    <img :src="img" class="progress-image mt2">
                 </v-flex>
                 <v-flex xs12 class="progress-text">
                     {{ name }} 

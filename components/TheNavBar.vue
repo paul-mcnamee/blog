@@ -36,7 +36,7 @@
             </v-container>
             <v-footer fixed app class="mb-5 elevation-4">
                 <v-layout layout row justify-center align-center>
-                    <a class="social mx-2" href="mailto:paulmc121@gmail.com"><v-icon>email</v-icon></a>
+                    <a class="social mx-2" href="mailto:Paul@FourthMouse.com"><v-icon>email</v-icon></a>
                     <a class="social mx-2" href="https://github.com/paul-mcnamee"><v-icon>fab fa-github</v-icon></a>
                     <a class="social mx-2" href="https://www.linkedin.com/in/paul-j-mcnamee/"><v-icon>fab fa-linkedin</v-icon></a>
                     <a class="social mx-2" href="https://twitter.com/pmcnamee_"><v-icon>fab fa-twitter</v-icon></a>

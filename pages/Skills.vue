@@ -7,7 +7,7 @@
             popout
             
             >
-            <v-expansion-panel-content value="true">
+            <v-expansion-panel-content value="">
                 <div slot="header" ><h2>Language Mastery</h2></div>
                 <v-card>
                     <v-layout>
@@ -45,7 +45,7 @@
                     </v-layout>
                 </v-card>
             </v-expansion-panel-content>
-            <v-expansion-panel-content value="true">
+            <v-expansion-panel-content value="">
                 <div slot="header" ><h2>Software Mastery</h2></div>
                 <v-card>
                     <v-layout>
@@ -53,24 +53,59 @@
                             <v-container grid-list-xl fluid>
                                 <v-layout row wrap>
                                     <Skill
-                                        name="EmberJS"
+                                        name="MS Excel"
+                                        percentage="90"
+                                        img="/images/logos/excel.png"
+                                    />
+                                    <Skill
+                                        name="Visual Studio"
+                                        percentage="90"
+                                        img="/images/logos/visualstudio.png"
+                                    />
+                                    <Skill
+                                        name="Jetbrains Suite"
+                                        percentage="90"
+                                        img="/images/logos/jetbrains.png"
+                                    />
+                                    <Skill
+                                        name="MS Word"
+                                        percentage="80"
+                                        img="/images/logos/word.png"
+                                    />
+                                    <Skill
+                                        name="MS PowerPoint"
+                                        percentage="80"
+                                        img="/images/logos/powerpoint.png"
+                                    />
+                                    <Skill
+                                        name="MS Access"
+                                        percentage="70"
+                                        img="/images/logos/access.png"
+                                    />
+                                    <Skill
+                                        name="Photoshop"
+                                        percentage="60"
+                                        img="/images/logos/photoshop.png"
+                                    />
+                                    <Skill
+                                        name="Solid Works"
                                         percentage="50"
-                                        img="/images/logos/ember.png"
+                                        img="/images/logos/solidworks.png"
                                     />
                                     <Skill
-                                        name="VueJS"
+                                        name="AutoCAD"
+                                        percentage="50"
+                                        img="/images/logos/autocad.png"
+                                    />
+                                    <Skill
+                                        name="Revit"
+                                        percentage="40"
+                                        img="/images/logos/revit.png"
+                                    />
+                                    <Skill
+                                        name="Illustrator"
                                         percentage="30"
-                                        img="/images/logos/vue.png"
-                                    />
-                                    <Skill
-                                        name="ReactJS"
-                                        percentage="10"
-                                        img="/images/logos/react.png"
-                                    />
-                                    <Skill
-                                        name="AngularJS"
-                                        percentage="10"
-                                        img="/images/logos/angular.png"
+                                        img="/images/logos/illustrator.png"
                                     />
                                 </v-layout>
                             </v-container>
@@ -78,7 +113,7 @@
                     </v-layout>
                 </v-card>
             </v-expansion-panel-content>
-            <v-expansion-panel-content value="true">
+            <v-expansion-panel-content value="">
                 <div slot="header" ><h2>Front End Framework Mastery</h2></div>
                 <v-card>
                     <v-layout>
