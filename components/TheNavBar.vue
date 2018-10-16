@@ -32,12 +32,12 @@
                             </a>
                         </nuxt-link>
                     </v-list-tile>
+                    <a href="/resume/Paul_McNamee_Resume.pdf" download class="nav-link">Resume</a>
                 </v-list>
             </v-container>
             <v-footer fixed app class="mb-5 elevation-4">
                 <Social/>
             </v-footer>
-        
         </v-navigation-drawer>
     <v-toolbar color="primary" dark fixed dense clipped-left scroll-off-screen app class="elevation-4">
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
@@ -55,7 +55,7 @@
 <script>
 import TheFooter from "@/components/TheFooter";
 import RandomQuote from "@/components/RandomQuote";
-import Social from "@/components/Social"
+import Social from "@/components/Social";
 
 export default {
   data: () => ({
@@ -64,7 +64,6 @@ export default {
       { text: "Home", link: "/" },
       { text: "Blog", link: "/Blog" },
       { text: "Skills", link: "/Skills" },
-      { text: "Resume", link: "/Resume" },
       { text: "Portfolio", link: "/Portfolio" },
       { text: "About", link: "/About" }
     ]
