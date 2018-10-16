@@ -1,10 +1,11 @@
 <template>
-    <v-flex fill-height>
+    <v-flex>
         <v-navigation-drawer 
         app
         v-model="drawer" 
         hide-overlay=true
         floating
+        clipped
         class="mt-2 elevation-3"
         height="95%"
         >
@@ -57,7 +58,7 @@
                     <a href="/resume/Paul_McNamee_Resume.pdf" download class="nav-link">Resume</a>
                 </v-list>
             </v-container>
-            <v-footer fixed app class="mb-5 elevation-4">
+            <v-footer fixed app class="mb-4 elevation-4">
                 <Social/>
             </v-footer>
         </v-navigation-drawer>
@@ -86,7 +87,9 @@ import Social from "@/components/Social";
 
 export default {
   data: () => ({
-    drawer: false,
+    drawer: function() {
+      return window.innerWidth < 800;
+    },
     items: [
       { text: "Home", link: "/" },
       { text: "Blog", link: "/Blog" },
@@ -97,6 +100,12 @@ export default {
   }),
   props: {
     source: String
+  },
+  methods: {
+    getWindowWidth() {
+      return window.innerWidth;
+      console.log("window width: " + window.innerWidth);
+    }
   },
   components: {
     TheFooter,
