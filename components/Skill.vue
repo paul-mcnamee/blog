@@ -5,7 +5,7 @@
             :size="200"
             :width="15"
             :rotate="-90"
-            value=percentage
+            :value=percentage
             color="teal"
             class="progress-circle"
         >
@@ -47,6 +47,10 @@
 
 <script>
 export default {
-  props: ["name", "percentage", "img"]
+  props: {
+    name: String,
+    percentage: Number,
+    img: String
+  }
 };
 </script>

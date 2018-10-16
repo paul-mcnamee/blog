@@ -40,7 +40,7 @@
                     </v-btn>
                 </v-fab-transition>
             </v-flex>
-            <v-flex class="text-xs-center mt-1 mb-5">
+            <v-flex class="text-xs-center mb-5">
                 <v-avatar size="125px">
                 <img class="img-circle elevation-4 mt-5"
                     src="https://avatars2.githubusercontent.com/u/35277807?s=460&v=4">
