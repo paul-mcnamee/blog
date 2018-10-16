@@ -1,5 +1,5 @@
 <template>
-    <v-flex>
+    <v-flex fill-height>
         <v-navigation-drawer 
         app
         v-model="drawer" 
@@ -87,9 +87,7 @@ import Social from "@/components/Social";
 
 export default {
   data: () => ({
-    drawer: function() {
-      return window.innerWidth < 800;
-    },
+    drawer: false,
     items: [
       { text: "Home", link: "/" },
       { text: "Blog", link: "/Blog" },
@@ -102,10 +100,12 @@ export default {
     source: String
   },
   methods: {
-    getWindowWidth() {
-      return window.innerWidth;
-      console.log("window width: " + window.innerWidth);
+    hideDrawerIfSmallWindow() {
+      this.drawer = window.innerWidth > 800;
     }
+  },
+  mounted() {
+    this.hideDrawerIfSmallWindow();
   },
   components: {
     TheFooter,
