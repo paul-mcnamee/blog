@@ -1,25 +1,62 @@
 <template>
     <div>
+        <v-fab-transition>
+            <v-btn
+            @click.stop="drawer = !drawer"
+            color="primary" 
+            dark 
+            v-show="!drawer"
+            fab
+            fixed
+            bottom
+            left
+            >
+            <v-icon>chevron_right</v-icon>
+            </v-btn>
+        </v-fab-transition>
+        
         <v-navigation-drawer 
-        floating 
-        clipped 
+        floating
+        clipped
         v-model="drawer" 
+        hide-overlay=true
         app
-        class="mb-5 elevation-3"
+        class="elevation-3 mb-5"
         >
-            <div class="text-xs-center mt-5 mb-4">
+            <v-flex>
+                <v-fab-transition>
+                    <v-btn
+                    @click.stop="drawer = !drawer"
+                    color="primary" 
+                    dark 
+                    v-show="drawer"
+                    fab
+                    fixed
+                    small
+                    top
+                    right
+                    >
+                    <v-icon>chevron_left</v-icon>
+                    </v-btn>
+                </v-fab-transition>
+            </v-flex>
+            <v-flex class="text-xs-center mt-1 mb-5">
                 <v-avatar size="125px">
-                <img class="img-circle elevation-4 mb-5"
+                <img class="img-circle elevation-4 mt-5"
                     src="https://avatars2.githubusercontent.com/u/35277807?s=460&v=4">
                 </v-avatar>
+            </v-flex>
+            <v-flex class="text-xs-center my-2">
                 <div class="headline">Paul <span style="font-weight:bold">McNamee</span></div>
+            </v-flex>
+            <v-flex>
                 <span v-if="$store.state.quote.length > 0">
                     <v-divider class="mx-5 my-4"></v-divider>
                     <div class="subheading text-xs-center grey--text mt-1 mb-3">
                         <RandomQuote/>
                     </div>
                 </span>
-            </div>
+            </v-flex>
             <v-divider class="mx-5"></v-divider>
             <v-container fluid grid-list-sm>
                 <v-list dense>
@@ -35,20 +72,10 @@
                     <a href="/resume/Paul_McNamee_Resume.pdf" download class="nav-link">Resume</a>
                 </v-list>
             </v-container>
-            <v-footer fixed app class="mb-5 elevation-4">
+            <v-footer fixed app class="mb-4 elevation-4">
                 <Social/>
             </v-footer>
         </v-navigation-drawer>
-    <v-toolbar color="primary" dark fixed dense clipped-left scroll-off-screen app class="elevation-4">
-        <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-        <v-toolbar-title class="mr-5 align-center">
-            <span class="title"></span>
-        </v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-btn icon>
-            <v-icon>more_vert</v-icon>
-        </v-btn>
-    </v-toolbar>
     </div>
 </template>
 
@@ -59,7 +86,7 @@ import Social from "@/components/Social";
 
 export default {
   data: () => ({
-    drawer: true,
+    drawer: false,
     items: [
       { text: "Home", link: "/" },
       { text: "Blog", link: "/Blog" },

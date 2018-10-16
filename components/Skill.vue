@@ -5,20 +5,20 @@
             :size="200"
             :width="15"
             :rotate="-90"
-            :value="percentage"
+            value=percentage
             color="teal"
             class="progress-circle"
         >
         <v-flex>
-                <v-flex xs12>
-                    <img :src="img" class="progress-image mt2">
-                    <br>
-                    <span class="progress-text">
-                        <center>
-                            {{name}}
-                        </center>
-                    </span>
-                </v-flex>
+            <v-flex xs12>
+                <img :src="img" class="progress-image mt2">
+                <br>
+                <span class="progress-text">
+                    <center>
+                        {{name}}
+                    </center>
+                </span>
+            </v-flex>
         </v-flex>
         </v-progress-circular>
     </v-flex>
