@@ -1,6 +1,5 @@
 <template>
   <v-app dark id="inspire">
-    
     <TheNavBar />
     <v-content>
       <main class="ma-1" >

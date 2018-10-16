@@ -1,5 +1,5 @@
 <template>
-    <v-flex fill-height>
+    <div>
         <v-navigation-drawer 
         app
         v-model="drawer" 
@@ -77,7 +77,7 @@
             <v-icon>chevron_right</v-icon>
             </v-btn>
         </v-fab-transition>
-    </v-flex>
+    </div>
 </template>
 
 <script>
