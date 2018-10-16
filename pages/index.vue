@@ -7,8 +7,12 @@
                         <v-layout>
                             <v-flex>
                                 <h3>
-                                    Do you need help with a website or a software project? Shoot me an email via <a href="mailto:Paul@FourthMouse.com">Paul@FourthMouse.com</a> or check out <a href="https://www.FourthMouse.com">FourthMouse.com</a> for more information.
+                                    Do you need help with a website or a software project? 
                                 </h3>
+                                <br/>
+                                <p class="mx-2">
+                                    Shoot me an email via <a href="mailto:Paul@FourthMouse.com">Paul@FourthMouse.com</a> or check out <a href="https://www.FourthMouse.com">FourthMouse.com</a> for more information.
+                                </p>
                             </v-flex>
                         </v-layout>
                     </v-container>

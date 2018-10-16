@@ -1,27 +1,12 @@
 <template>
-    <div>
-        <v-fab-transition>
-            <v-btn
-            @click.stop="drawer = !drawer"
-            color="primary" 
-            dark 
-            v-show="!drawer"
-            fab
-            fixed
-            bottom
-            left
-            >
-            <v-icon>chevron_right</v-icon>
-            </v-btn>
-        </v-fab-transition>
-        
+    <v-flex fill-height>
         <v-navigation-drawer 
-        floating
-        clipped
+        app
         v-model="drawer" 
         hide-overlay=true
-        app
-        class="elevation-3 mb-5"
+        floating
+        class="mt-2 elevation-3"
+        height="95%"
         >
             <v-flex>
                 <v-fab-transition>
@@ -57,7 +42,7 @@
                     </div>
                 </span>
             </v-flex>
-            <v-divider class="mx-5"></v-divider>
+            <v-divider class="mx-4 mt-3"></v-divider>
             <v-container fluid grid-list-sm>
                 <v-list dense>
                     <v-list-tile v-for="item in items" :key="item.text" class="nav-link">
@@ -72,11 +57,26 @@
                     <a href="/resume/Paul_McNamee_Resume.pdf" download class="nav-link">Resume</a>
                 </v-list>
             </v-container>
-            <v-footer fixed app class="mb-4 elevation-4">
+            <v-footer fixed app class="mb-5 elevation-4">
                 <Social/>
             </v-footer>
         </v-navigation-drawer>
-    </div>
+        <v-fab-transition>
+            <v-btn
+            @click.stop="drawer = !drawer"
+            color="primary" 
+            dark 
+            v-show="!drawer"
+            fab
+            fixed
+            bottom
+            left
+            class="mb-4"
+            >
+            <v-icon>chevron_right</v-icon>
+            </v-btn>
+        </v-fab-transition>
+    </v-flex>
 </template>
 
 <script>
