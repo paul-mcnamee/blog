@@ -2,7 +2,7 @@
   <v-app dark id="inspire">
     <TheNavBar />
     <v-content>
-      <main class="ma-1" >
+      <main class="ma-1 pt-5" >
         <nuxt/>
       </main>
     </v-content>

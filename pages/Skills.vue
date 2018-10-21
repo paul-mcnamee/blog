@@ -29,6 +29,11 @@
                                         img="/images/logos/python.png"
                                     />
                                     <Skill
+                                        name="JS"
+                                        :percentage=65
+                                        img="/images/logos/js.jpg"
+                                    />
+                                    <Skill
                                         name="PHP"
                                         :percentage=35
                                         img="/images/logos/php.png"
@@ -121,12 +126,12 @@
                                 <v-layout row wrap>
                                     <Skill
                                         name="EmberJS"
-                                        :percentage=50
+                                        :percentage=45
                                         img="/images/logos/ember.png"
                                     />
                                     <Skill
                                         name="VueJS"
-                                        :percentage=30
+                                        :percentage=35
                                         img="/images/logos/vue.png"
                                     />
                                     <Skill

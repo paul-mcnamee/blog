@@ -32,8 +32,8 @@
                         </v-flex>
                         <v-flex xs12 md6 lg6>
                             <v-flex class="ml-3">
-<p>I create websites for small businesses and entrepreneurs to establish an online presence and fluorish in the digital age.</p>
-                                <p>I am currently 28 years old, and live in Denver Colorado. I have had a huge passion for computers, programming, gaming, mechanical things, and basically anything relating to how things work since I was pretty young. I have always been a hard worker but also a smart worker, I automate the stuff I don't really want to do, or figure out a way to have someone or something else do it. I love programming, but my interests definitely extend way beyond computers. Fun fact, I was heavily considering doing ceramics full time as a career path. I also like to hike, fish, snowboard, make beer (and drink it), and lots of other stuff. Check out the about page or the blog posts to get to know me better.</p>
+                                <p>I create websites for small businesses and entrepreneurs to establish an online presence and fluorish in the digital age.</p>
+                                <p>I am currently 28 years old, and live in Denver Colorado. I have had a huge passion for computers, programming, gaming, mechanical things, and basically anything relating to how things work since I was pretty young. I automate the superfluous stuff, and streamline processes to pass on the cost savings to you. I love programming, but my interests definitely extend way beyond computers. Fun fact, I was heavily considering doing ceramics full time as a career path. I also like to hike, fish, snowboard, make beer (and drink it), and lots of other stuff. Check out the about page or the blog posts to get to know me better.</p>
                             </v-flex>
                                 
                         </v-flex>

@@ -70,7 +70,8 @@
             v-show="!drawer"
             fab
             fixed
-            bottom
+            top
+            small
             left
             class="mb-4"
             >
