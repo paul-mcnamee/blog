@@ -91,9 +91,9 @@ export default {
     drawer: false,
     items: [
       { text: "Home", link: "/" },
-      { text: "Blog", link: "/Blog" },
+      //   { text: "Blog", link: "/Blog" },
       { text: "Skills", link: "/Skills" },
-      { text: "Portfolio", link: "/Portfolio" },
+      //   { text: "Portfolio", link: "/Portfolio" },
       { text: "About", link: "/About" }
     ]
   }),
