@@ -29,7 +29,7 @@
                                         img="/images/logos/python.png"
                                     />
                                     <Skill
-                                        name="JS"
+                                        name="JavaScript"
                                         :percentage=65
                                         img="/images/logos/js.jpg"
                                     />
