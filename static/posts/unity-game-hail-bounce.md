@@ -2,10 +2,8 @@
 
 Download the game on android:
 <a href='https://play.google.com/store/apps/details?id=com.FourthMouse.HailBounce'>
-<img src='/posts/images/logos/PlayStore.png' alt="drawing" width="300"/>
+<img src='/posts/images/PlayStore.png' alt="Play Store Download" width="300"/>
 </a>
-
-[![PlayStore](/posts/images/logos/PlayStore.png =300x)](https://play.google.com/store/apps/details?id=com.FourthMouse.HailBounce)
 
 - [Building a Game With Unity](#Building-a-Game-With-Unity)
   - [Intro](#Intro)
@@ -261,8 +259,8 @@ I found [this one](https://assetstore.unity.com/packages/2d/gui/icons/105-colorf
 ## Debugging Android
 
 1. Connect your phone to your computer and make sure the phone is set to debug mode. See instructions [here](https://developer.android.com/studio/debug/dev-options) if you are not sure how to do that.
-1. Locate the SDK (this is installed by unity by default). `Edit -> Preferences -> External Tools -> Android` In the android section, if the checkmark for "Android SDK Tools Installed with Unity (recommended)" is selected, then your SDK will be located somewhere similar to time: `C:/Program Files/Unity/Hub/Editor/2019.3.0a6/Editor/Data/PlaybackEngines/AndroidPlayer/SDK`
-1. Navigate to the SDK and locate the "monitor.bat" file and run it, this will open the android device monitor which we can use to see the logs from the application we are creating.
+2. Locate the SDK (this is installed by unity by default). `Edit -> Preferences -> External Tools -> Android` In the android section, if the checkmark for "Android SDK Tools Installed with Unity (recommended)" is selected, then your SDK will be located somewhere similar to time: `C:/Program Files/Unity/Hub/Editor/2019.3.0a6/Editor/Data/PlaybackEngines/AndroidPlayer/SDK`
+3. Navigate to the SDK and locate the "monitor.bat" file and run it, this will open the android device monitor which we can use to see the logs from the application we are creating.
 
 ## Building Android
 
