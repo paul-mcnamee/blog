@@ -1,7 +1,11 @@
 # Building a Game With Unity
 
 Download the game on android:
-[![PlayStore](images/logos/PlayStore.png)](https://play.google.com/store/apps/details?id=com.FourthMouse.HailBounce)
+<a href='https://play.google.com/store/apps/details?id=com.FourthMouse.HailBounce'>
+<img src='/posts/images/logos/PlayStore.png' alt="drawing" width="300"/>
+</a>
+
+[![PlayStore](/posts/images/logos/PlayStore.png =300x)](https://play.google.com/store/apps/details?id=com.FourthMouse.HailBounce)
 
 - [Building a Game With Unity](#Building-a-Game-With-Unity)
   - [Intro](#Intro)
