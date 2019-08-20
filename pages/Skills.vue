@@ -13,7 +13,10 @@
                   <v-layout row wrap>
                     <Skill name="C#" :percentage="85" img="/images/logos/csharp.png" />
                     <Skill name="ASP.NET" :percentage="75" img="/images/logos/dotnet.png" />
+                    <Skill name="SQL" :percentage="75" img="/images/logos/sql.png" />
                     <Skill name="Python" :percentage="70" img="/images/logos/python.png" />
+                    <Skill name="HTML" :percentage="70" img="/images/logos/hmtl.svg" />
+                    <Skill name="CSS" :percentage="70" img="/images/logos/css.png" />
                     <Skill name="TypeScript" :percentage="65" img="/images/logos/ts.png" />
                     <Skill name="JavaScript" :percentage="65" img="/images/logos/js.jpg" />
                     <Skill name="PHP" :percentage="35" img="/images/logos/php.png" />
