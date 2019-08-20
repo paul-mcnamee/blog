@@ -1,45 +1,49 @@
-const pkg = require('./package')
-const nodeExternals = require('webpack-node-externals')
+const pkg = require("./package");
+const nodeExternals = require("webpack-node-externals");
 
 module.exports = {
-  mode: 'universal',
+  mode: "universal",
 
   /*
    ** Headers of the page
    */
   head: {
     title: pkg.name,
-    meta: [{
-        charset: 'utf-8'
+    meta: [
+      {
+        charset: "utf-8"
       },
       {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
       },
       {
-        hid: 'description',
-        name: 'description',
+        hid: "description",
+        name: "description",
         content: pkg.description
       }
     ],
-    link: [{
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700'
+    link: [
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
       },
       {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/icon?family=Material+Icons"
       },
       {
         rel: "stylesheet",
         href: "https://use.fontawesome.com/releases/v5.2.0/css/brands.css",
-        integrity: "sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE",
+        integrity:
+          "sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE",
         crossorigin: "anonymous"
       },
       {
         rel: "stylesheet",
         href: "https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css",
-        integrity: "sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6",
+        integrity:
+          "sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6",
         crossorigin: "anonymous"
       }
     ]
@@ -49,35 +53,30 @@ module.exports = {
    ** Customize the progress-bar color
    */
   loading: {
-    color: '#FFFFFF'
+    color: "#FFFFFF"
   },
 
   /*
    ** Global CSS
    */
-  css: [
-    'vuetify/src/stylus/main.styl',
-    'assets/main.css'
-  ],
+  css: ["vuetify/src/stylus/main.styl", "assets/main.css"],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    '@/plugins/vuetify'
-  ],
+  plugins: ["@/plugins/vuetify"],
 
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
-    '@nuxtjs/markdownit'
+    "@nuxtjs/axios",
+    "@nuxtjs/markdownit"
   ],
 
   markdownit: {
-    preset: 'default',
+    preset: "default",
     linkify: true,
     breaks: true
   },
@@ -89,14 +88,14 @@ module.exports = {
   },
 
   generate: {
-    fallback: true,
+    fallback: true
   },
 
   /*
    ** Build configuration
    */
   build: {
-    vendor: ['axios', 'vuetify'],
+    vendor: ["axios", "vuetify"],
     /*
      ** You can extend webpack config here
      */
@@ -104,22 +103,24 @@ module.exports = {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
-          enforce: 'pre',
+          enforce: "pre",
           test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
+          loader: "eslint-loader",
           exclude: /(node_modules)/
-        })
+        });
       }
       if (ctx.isServer) {
         config.externals = [
           nodeExternals({
             whitelist: [/^vuetify/]
           })
-        ]
+        ];
       }
 
-      const vueLoader = config.module.rules.find((rule) => rule.loader === 'vue-loader')
-      vueLoader.options.transformToRequire['img'] = ['src', 'data-src']
+      const vueLoader = config.module.rules.find(
+        rule => rule.loader === "vue-loader"
+      );
+      vueLoader.options.transformAssetUrls["img"] = ["src", "data-src"];
     }
   }
-}
+};

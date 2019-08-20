@@ -14,7 +14,7 @@
                     <Skill name="C#" :percentage="85" img="/images/logos/csharp.png" />
                     <Skill name="ASP.NET" :percentage="75" img="/images/logos/dotnet.png" />
                     <Skill name="Python" :percentage="70" img="/images/logos/python.png" />
-                    <Skill name="TypeScript" :percentage="65" img="/images/logos/ts.jpg" />
+                    <Skill name="TypeScript" :percentage="65" img="/images/logos/ts.png" />
                     <Skill name="JavaScript" :percentage="65" img="/images/logos/js.jpg" />
                     <Skill name="PHP" :percentage="35" img="/images/logos/php.png" />
                     <Skill name="c++" :percentage="30" img="/images/logos/c++.png" />
