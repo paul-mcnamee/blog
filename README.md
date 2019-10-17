@@ -1,6 +1,5 @@
 # pmac-blog
 
-> [!IMPORTANT]
 > Paul McNamee&#39;s Blog
 
 ## Build Setup
