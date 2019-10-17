@@ -1,84 +1,86 @@
 <template>
-    <div>
-        <v-navigation-drawer 
-        app
-        v-model="drawer" 
-        hide-overlay=true
-        floating
-        clipped
-        class="mt-2 elevation-3"
-        height="95%"
-        >
-            <v-flex>
-                <v-fab-transition>
-                    <v-btn
-                    @click.stop="drawer = !drawer"
-                    color="primary" 
-                    dark 
-                    v-show="drawer"
-                    fab
-                    fixed
-                    small
-                    top
-                    right
-                    >
-                    <v-icon>chevron_left</v-icon>
-                    </v-btn>
-                </v-fab-transition>
-            </v-flex>
-            <v-flex class="text-xs-center mb-5">
-                <v-avatar size="125px">
-                <img class="img-circle elevation-4 mt-5"
-                    src="https://avatars2.githubusercontent.com/u/35277807?s=460&v=4">
-                </v-avatar>
-            </v-flex>
-            <v-flex class="text-xs-center my-2">
-                <div class="headline">Paul <span style="font-weight:bold">McNamee</span></div>
-            </v-flex>
-            <v-flex>
-                <span v-if="$store.state.quote.length > 0">
-                    <v-divider class="mx-5 my-4"></v-divider>
-                    <div class="subheading text-xs-center grey--text mt-1 mb-3">
-                        <RandomQuote/>
-                    </div>
-                </span>
-            </v-flex>
-            <v-divider class="mx-4 mt-3"></v-divider>
-            <v-container fluid grid-list-sm>
-                <v-list dense>
-                    <v-list-tile v-for="item in items" :key="item.text" class="nav-link">
-                        <nuxt-link :to="item.link" class="nav-link">
-                            <a class="nav-link">
-                                <v-list-tile-content>
-                                    <v-list-tile-title>{{ item.text }}</v-list-tile-title>
-                                </v-list-tile-content>
-                            </a>
-                        </nuxt-link>
-                    </v-list-tile>
-                    <a href="/resume/Paul_McNamee_Resume.pdf" download class="nav-link">Resume</a>
-                </v-list>
-            </v-container>
-            <v-footer fixed app class="mb-4 elevation-4">
-                <Social/>
-            </v-footer>
-        </v-navigation-drawer>
+  <div>
+    <v-navigation-drawer
+      app
+      v-model="drawer"
+      floating
+      clipped
+      class="mt-2 elevation-3"
+      height="95%"
+    >
+      <v-flex>
         <v-fab-transition>
-            <v-btn
+          <v-btn
             @click.stop="drawer = !drawer"
-            color="primary" 
-            dark 
-            v-show="!drawer"
+            color="primary"
+            dark
+            v-show="drawer"
             fab
             fixed
-            top
             small
-            left
-            class="mb-4"
-            >
-            <v-icon>chevron_right</v-icon>
-            </v-btn>
+            top
+            right
+          >
+            <v-icon>chevron_left</v-icon>
+          </v-btn>
         </v-fab-transition>
-    </div>
+      </v-flex>
+      <v-flex class="text-xs-center mb-5">
+        <v-avatar size="125px">
+          <img
+            class="img-circle elevation-4 mt-5"
+            src="https://avatars2.githubusercontent.com/u/35277807?s=460&v=4"
+          />
+        </v-avatar>
+      </v-flex>
+      <v-flex class="text-xs-center my-2">
+        <div class="headline">
+          Paul
+          <span style="font-weight:bold">McNamee</span>
+        </div>
+      </v-flex>
+      <v-flex>
+        <v-divider class="mx-4 my-2"></v-divider>
+        <div class="subheading text-xs-center grey--text mt-1 mb-3">
+          <RandomQuote />
+        </div>
+      </v-flex>
+      <v-divider class="mx-4 mt-2"></v-divider>
+      <v-container fluid grid-list-sm>
+        <v-list dense>
+          <v-list-tile v-for="item in items" :key="item.text" class="nav-link">
+            <nuxt-link :to="item.link" class="nav-link">
+              <a class="nav-link">
+                <v-list-tile-content>
+                  <v-list-tile-title>{{ item.text }}</v-list-tile-title>
+                </v-list-tile-content>
+              </a>
+            </nuxt-link>
+          </v-list-tile>
+          <a href="/resume/Paul_McNamee_Resume.pdf" download class="nav-link">Resume</a>
+        </v-list>
+      </v-container>
+      <v-footer fixed app class="elevation-4">
+        <Social />
+      </v-footer>
+    </v-navigation-drawer>
+    <v-fab-transition>
+      <v-btn
+        @click.stop="drawer = !drawer"
+        color="primary"
+        dark
+        v-show="!drawer"
+        fab
+        fixed
+        top
+        small
+        left
+        class="mb-4"
+      >
+        <v-icon>chevron_right</v-icon>
+      </v-btn>
+    </v-fab-transition>
+  </div>
 </template>
 
 <script>
@@ -91,9 +93,9 @@ export default {
     drawer: false,
     items: [
       { text: "Home", link: "/" },
-      //   { text: "Blog", link: "/Blog" },
+      // { text: "Blog", link: "/Blog" },
       { text: "Skills", link: "/Skills" },
-      //   { text: "Portfolio", link: "/Portfolio" },
+      // { text: "Portfolio", link: "/Portfolio" },
       { text: "About", link: "/About" }
     ]
   }),

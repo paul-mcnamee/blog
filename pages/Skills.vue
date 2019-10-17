@@ -74,10 +74,10 @@
               <v-flex>
                 <v-container grid-list-xl fluid>
                   <v-layout row wrap>
-                    <Skill name="EmberJS" :percentage="65" img="/images/logos/ember.png" />
-                    <Skill name="AngularJS" :percentage="55" img="/images/logos/angular.png" />
-                    <Skill name="VueJS" :percentage="35" img="/images/logos/vue.png" />
-                    <Skill name="ReactJS" :percentage="10" img="/images/logos/react.png" />
+                    <Skill name="Ember" :percentage="65" img="/images/logos/ember.png" />
+                    <Skill name="Angular" :percentage="55" img="/images/logos/angular.png" />
+                    <Skill name="Vue" :percentage="35" img="/images/logos/vue.png" />
+                    <Skill name="React" :percentage="10" img="/images/logos/react.png" />
                   </v-layout>
                 </v-container>
               </v-flex>

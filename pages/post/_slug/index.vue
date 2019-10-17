@@ -1,18 +1,17 @@
 <template>
-    <div id="post">
-        <v-container>
-        <div id="post-image">
-        </div>
-            <div v-html="mdContent" class="contentWrapper content"></div>
-        </v-container>
-    </div>
+  <div id="post">
+    <v-container>
+      <div id="post-image"></div>
+      <div v-html="mdContent" class="contentWrapper content"></div>
+    </v-container>
+  </div>
 </template>
 
 <script>
 export default {
   computed: {
     mdContent() {
-      return require(`static/posts/${this.$route.params.slug}.md`);
+      return require(`static/posts/${this.$route.params.slug}.md`).default;
     }
   }
 };
