@@ -59,7 +59,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ["vuetify/src/stylus/main.styl", "assets/main.css"],
+  css: ["vuetify/src/stylus/main.styl", "assets/main.css", "~/node_modules/highlight.js/styles/atom-one-dark.css"],
 
   /*
    ** Plugins to load before mounting the App
@@ -78,7 +78,10 @@ module.exports = {
   markdownit: {
     preset: "default",
     linkify: true,
-    breaks: true
+    breaks: true,
+    use: [
+      'markdown-it-highlightjs'
+    ]
   },
   /*
    ** Axios module configuration

@@ -77,6 +77,7 @@ I wanted to make it different than just flying through some zone to score, so I 
 Clouds needed some collision, I created a new object and added this simple script on a new cloud object.
 
 ```C#
+
 void OnCollisionEnter2D(Collision2D other)
 {
     this.gameObject.SetActive(false);
@@ -86,28 +87,30 @@ void OnCollisionEnter2D(Collision2D other)
 I removed the bird flapping animations it looked a bit plain so I also made the object rotate on impact.
 
 ```c#
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.collider.GetComponent<Cloud>() != null)
-        {
-            GameControl.instance.HailScored();
-            rb2d.MoveRotation(10);
-            return;
-        }
 
-        this.OnDeath();
+void OnCollisionEnter2D(Collision2D other)
+{
+    if (other.collider.GetComponent<Cloud>() != null)
+    {
+        GameControl.instance.HailScored();
+        rb2d.MoveRotation(10);
+        return;
     }
+
+    this.OnDeath();
+}
 ```
 
 I thought it would be a bit more difficult if the game sped up over time. The scroll speed is the speed of the background and the clouds which is moving to the left (negative). I changed that by subtracting a set amount when the user scored:
 
 ```c#
-    public void HailScored()
-    {
-        ...
-        scrollSpeed -= scrollSpeedIncreaseOnImpact;
-        ...
-    }
+
+public void HailScored()
+{
+    ...
+    scrollSpeed -= scrollSpeedIncreaseOnImpact;
+    ...
+}
 ```
 
 ### Spawning Clouds (used to be pipes)
@@ -117,6 +120,7 @@ I used the same spawning pool pattern that was used for the pipes in the tutoria
 This was the code from the tutorial for spawning the pipes:
 
 ```c#
+
 using UnityEngine;
 using System.Collections;
 
@@ -182,6 +186,7 @@ public class ColumnPool : MonoBehaviour
 This is the code that I ended up with after my modifications for the cloud pool:
 
 ```c#
+
 using UnityEngine;
 using System.Collections;
 
@@ -292,6 +297,7 @@ Make sure to add your device as a test device. Follow [this guide](https://devel
 Attach the Ads script to the Main Camera object in unity, this is the script I am using for ads:
 
 ```c#
+
 using UnityEngine;
 using GoogleMobileAds.Api;
 
