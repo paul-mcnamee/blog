@@ -1,7 +1,7 @@
 <template>
   <v-flex xs12 md6 lg4>
     <v-card>
-      <v-container v-if="project.imgUrl" class="pa-1 ma-0">
+      <v-container v-if="project.imgUrl" class="pa-3 ma-0">
         <v-img height="220" contain :src="project.imgUrl"></v-img>
       </v-container>
       <v-card-text class="pa-2 ma-0">
@@ -24,10 +24,10 @@
       </v-card-text>
       <v-card-actions class="pa-1 ma-0">
         <v-flex v-if="project.codeUrl" class="d-flex xs6 pt-0 mt-0">
-          <v-btn :href="project.codeUrl">Code</v-btn>
+          <v-btn flat :href="project.codeUrl">Code</v-btn>
         </v-flex>
         <v-flex v-if="project.siteUrl" class="d-flex xs6 pt-0 mt-0">
-          <v-btn :href="project.siteUrl">Link</v-btn>
+          <v-btn flat :href="project.siteUrl">Link</v-btn>
         </v-flex>
       </v-card-actions>
     </v-card>
@@ -41,5 +41,8 @@ export default {
 </script>
 
 <style scoped>
+.v-btn {
+  color: #4db6ac;
+}
 </style>
 
