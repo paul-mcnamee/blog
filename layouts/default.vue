@@ -2,8 +2,8 @@
   <v-app dark id="inspire">
     <TheNavBar />
     <v-content>
-      <main class="ma-1 pt-5" >
-        <nuxt/>
+      <main class="ma-1 pt-5">
+        <nuxt />
       </main>
     </v-content>
     <!-- <TheFooter /> -->
@@ -25,5 +25,6 @@ export default {
 <style>
 * {
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
 </style>
