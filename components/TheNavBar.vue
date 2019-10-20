@@ -57,7 +57,6 @@
               </a>
             </nuxt-link>
           </v-list-tile>
-          <a href="/resume/Paul_McNamee_Resume.pdf" download class="nav-link">Resume</a>
         </v-list>
       </v-container>
       <v-footer fixed app class="elevation-4">
@@ -96,7 +95,8 @@ export default {
       // { text: "Blog", link: "/Blog" },
       { text: "Skills", link: "/Skills" },
       { text: "Projects", link: "/Projects" },
-      { text: "About", link: "/About" }
+      { text: "About", link: "/About" },
+      { text: "Resume", link: "/Resume" }
     ]
   }),
   props: {
