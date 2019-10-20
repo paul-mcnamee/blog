@@ -1,15 +1,15 @@
 <template>
   <v-flex xs12 md6 lg4>
-    <v-card hover>
-      <v-flex>
-        <v-img class="white--text" height="220" contain :src="project.imgUrl"></v-img>
-      </v-flex>
-      <v-card-text>
-        <v-flex v-if="project.title" xs12 align-end d-flex>
+    <v-card>
+      <v-container v-if="project.imgUrl" class="pa-1 ma-0">
+        <v-img height="220" contain :src="project.imgUrl"></v-img>
+      </v-container>
+      <v-card-text class="pa-2 ma-0">
+        <v-container v-if="project.title" class="pa-1 ma-0">
           <span class="headline">{{ project.title }}</span>
-        </v-flex>
-        <v-flex class="d-flex xs12">{{ project.description }}</v-flex>
-        <v-flex v-if="project.tags" class="d-flex xs12">
+        </v-container>
+        <v-container class="pa-2 ma-0">{{ project.description }}</v-container>
+        <v-flex class="pa-1 ma-0" v-if="project.tags">
           <v-chip-group column dark>
             <v-chip
               v-for="tag in project.tags"
@@ -22,12 +22,12 @@
           </v-chip-group>
         </v-flex>
       </v-card-text>
-      <v-card-actions>
-        <v-flex v-if="project.codeUrl" class="d-flex xs6 justify-right">
-          <v-btn flat class="blue--text" :href="project.codeUrl">Code</v-btn>
+      <v-card-actions class="pa-1 ma-0">
+        <v-flex v-if="project.codeUrl" class="d-flex xs6 pt-0 mt-0">
+          <v-btn :href="project.codeUrl">Code</v-btn>
         </v-flex>
-        <v-flex v-if="project.siteUrl" class="d-flex xs6 justify-left">
-          <v-btn flat class="blue--text" :href="project.siteUrl">Link</v-btn>
+        <v-flex v-if="project.siteUrl" class="d-flex xs6 pt-0 mt-0">
+          <v-btn :href="project.siteUrl">Link</v-btn>
         </v-flex>
       </v-card-actions>
     </v-card>
