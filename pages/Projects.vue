@@ -9,19 +9,19 @@
     </v-container>
     <v-container>
       <p>
-        I like to learn in my spare time quite a bit. Learning is by far my most time consuming hobby.
+        I like to learn in my spare time quite a bit, learning is by far my most time consuming hobby.
         I have been teaching myself programming since I was 10 years old and really enjoy
         learning new frameworks and technologies.
         These projects have been worked on in my free time,
-        most for the purpose of learning something new and interesting.
-        I find that I learn better if I have an interesting project to
-        apply the technologies to.
+        and most projects were for the purpose of learning something new and interesting.
+        I find that I learn better and quicker if I have an interesting project to
+        apply the new technologies to.
       </p>
       <p>
-        For more information about my professional positions and projects please view my
+        If you would like more information about my professional positions and projects please view my
         <a
           href="https://www.linkedin.com/in/paul-j-mcnamee/"
-        >LinkedIn page.</a>
+        >LinkedIn</a>. If you would like to know more about a particular project, feel free to send me an email.
       </p>
     </v-container>
     <v-layout>
