@@ -95,7 +95,7 @@ export default {
       { text: "Home", link: "/" },
       // { text: "Blog", link: "/Blog" },
       { text: "Skills", link: "/Skills" },
-      // { text: "Portfolio", link: "/Portfolio" },
+      { text: "Projects", link: "/Projects" },
       { text: "About", link: "/About" }
     ]
   }),
