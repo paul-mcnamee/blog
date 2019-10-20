@@ -8,13 +8,15 @@
       </v-layout>
     </v-container>
     <v-container>
-      <p>I like to learn in my spare time quite a bit. Learning is by far my most time consuming hobby.
-          I have been teaching myself programming since I was 10 years old and really enjoy 
-          learning new frameworks and technologies. 
-          These projects have been worked on in my free time, 
-          most for the purpose of learning something new and interesting. 
-          I find that I learn better if I have an interesting project to 
-          apply the technologies to.</p>
+      <p>
+        I like to learn in my spare time quite a bit. Learning is by far my most time consuming hobby.
+        I have been teaching myself programming since I was 10 years old and really enjoy
+        learning new frameworks and technologies.
+        These projects have been worked on in my free time,
+        most for the purpose of learning something new and interesting.
+        I find that I learn better if I have an interesting project to
+        apply the technologies to.
+      </p>
       <p>
         For more information about my professional positions and projects please view my
         <a
@@ -109,7 +111,7 @@ export default {
           description:
             "You know those fat kid cards you get at restaurants where you eat there 10 times and get a free meal? This consolidates those into your very own fat kid wallet.",
           imgUrl: "",
-          codeUrl: "https://www.google.com",
+          codeUrl: "https://github.com/paul-mcnamee/FatKidWallet",
           siteUrl: "",
           tags: ["PHP", "JavaScript"],
           id: "fat-kid-wallet"
