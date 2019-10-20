@@ -80,15 +80,16 @@ export default {
             "Hail bounce is a side-scrolling mobile game featuring 2D retro style graphics. The objective is to fly through clouds and gain hail points. Fight gravity and the increasing storm winds to achieve the highest score to brag to your friends. Avoid falling out of the cloud cycle or falling to the ground.",
           imgUrl:
             "https://lh3.googleusercontent.com/csKBp3MUl4Asrogb97tJfsiNcutnXfD_k_wOWE4HQ_XojeXGZ2KpJyIoCIdRL12tmIg=s180",
-          codeUrl: "",
-          siteUrl: "/post/unity-game-hail-bounce",
+          codeUrl: "/post/unity-game-hail-bounce",
+          siteUrl:
+            "https://play.google.com/store/apps/details?id=com.FourthMouse.HailBounce",
           tags: ["C#", "Unity", "Game Development"],
           id: "hail-bounce"
         },
         {
           title: "Personal Website",
           description:
-            "You're already looking at this one! This website was designed from scratch using a bunch of technology that I thought was interesting and wanted to learn on my own time.",
+            "You're already looking at this one! This website was designed from scratch using a bunch of new web technology that I thought was interesting to me and will host some information that I would like to share with the rest of the world relating to myself and my active pursuits.",
           imgUrl: "https://avatars2.githubusercontent.com/u/35277807?s=460&v=4",
           codeUrl: "https://github.com/paul-mcnamee/blog",
           siteUrl: "/",
@@ -117,7 +118,7 @@ export default {
           id: "fat-kid-wallet"
         },
         {
-          title: "WorkoutBuddy",
+          title: "Workout Buddy",
           description:
             "This was originally thought of as an app, it only got as far as scraping a bunch of data for gym locations though. I had a lot of fun and learned a lot about web scraping and python in the process.",
           imgUrl: "",
