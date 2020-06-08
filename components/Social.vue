@@ -9,7 +9,7 @@
     <a class="social mx-2" href="https://www.linkedin.com/in/paul-j-mcnamee/">
       <v-icon>fab fa-linkedin</v-icon>
     </a>
-    <a class="social mx-2" href="https://twitter.com/pmacdev">
+    <a class="social mx-2" href="https://twitter.com/PaulMcNamee_">
       <v-icon>fab fa-twitter</v-icon>
     </a>
     <a class="social mx-2" href="https://stackoverflow.com/users/9683122/pmcnamee">
