@@ -45,22 +45,6 @@
       <v-card class="elevation-2">
         <v-container>
           <v-layout row wrap align-center justify-center>
-            <v-flex xs12 md6 lg6 align-center justify-center justify align-content-space-around>
-              <center>
-                <h1>
-                  <a href="resume/Paul_McNamee_Resume.pdf" download>Resume Download</a>
-                </h1>
-              </center>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-card>
-    </section>
-    <br />
-    <section>
-      <v-card class="elevation-2">
-        <v-container>
-          <v-layout row wrap align-center justify-center>
             <v-flex xs12 align-center justify-center justify align-content-space-around>
               <center>
                 <Social />

@@ -96,7 +96,6 @@ export default {
       { text: "Skills", link: "/Skills" },
       { text: "Projects", link: "/Projects" },
       { text: "About", link: "/About" },
-      { text: "Resume", link: "/Resume" }
     ]
   }),
   props: {
