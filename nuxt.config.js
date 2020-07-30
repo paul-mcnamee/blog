@@ -72,7 +72,13 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     "@nuxtjs/axios",
-    "@nuxtjs/markdownit"
+    "@nuxtjs/markdownit",
+    ["@nuxtjs/google-analytics", {
+      id: "UA-120955985-2"
+    }],
+    ["@nuxtjs/google-adsense", {
+      id: "ca-pub-8331234367729530"
+    }]
   ],
 
   markdownit: {
@@ -80,7 +86,7 @@ module.exports = {
     linkify: true,
     breaks: true,
     use: [
-      'markdown-it-highlightjs'
+      "markdown-it-highlightjs"
     ]
   },
   /*
