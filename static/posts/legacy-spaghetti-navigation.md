@@ -5,6 +5,7 @@ Today I had the joy of finding any instance of the variable "timeout" set as a q
 This provided a good lesson, the query params could be sent from pretty much anything redirecting or loading a page. This is definitely not a reasonable approach for changing something as important as the session timeout of a user. Ideally the code should only be in one place, preferably by the backend, and if you need to override the timeout please don't override it in javascript on the client side. You can pass a query parameter in many different ways with this setup: the original page; the inheriting pages; url construction; link redirection; the list goes on... Some of the more interesting edge cases included ridiculous stuff like, if the person doing the implementation split the word "timeout" so it was a concatenation. I don't know why anyone would do such a thing, but it's certainly possible to have something like this:
 
 ```javascript
+
 "?tim" + "eout=" + timeToExpire;
 ```
 

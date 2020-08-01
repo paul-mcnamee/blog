@@ -5,14 +5,16 @@
       <v-flex>
         <v-container grid-list-xl fluid>
           <v-layout row wrap>
-              <Post
-                v-for="post in posts"
-                :key="post.id"
-                :post="post" 
-                :title="post.title"
-                :imgUrl="post.imgUrl"
-                :description="post.description"
-              ></Post>
+            <Post
+              v-for="post in posts"
+              :key="post.id"
+              :post="post"
+              :title="post.title"
+              :imgUrl="post.imgUrl"
+              :description="post.description"
+              :published="post.published"
+              :tags="post.tags"
+            ></Post>
           </v-layout>
         </v-container>
       </v-flex>
@@ -21,7 +23,7 @@
 </template>
 
 <script>
-import Post from '@/components/Post'
+import Post from "@/components/Post";
 // import fs from 'fs'
 // import path from 'path'
 
@@ -35,91 +37,80 @@ export default {
       // TODO: get the posts from json files in the static folder?
       posts: [
         {
-          title: "Fusce ullamcorper tellus",
+          title: "Timeout, for now ... or is it?",
           description:
-            "Fusce ullamcorper tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultrices maximus. Donec non tellus non neque pellentesque fermentum. Aenean in pellentesque urna.",
-          imgUrl:
-            "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/drop.jpg",
-          id: "this-is-a-test"
+            "I decided to take time off from my job and wanted to reflect on my experience with creating companies and my journey into software development and entrepeneurship so far.",
+          imgUrl: "/posts/images/timeout.jpg",
+          id: "I-am-taking-time-off-from-my-job",
+          tags: [
+            "Software",
+            "Working",
+            "Sabbatical",
+            "Entrepeneurship",
+            "About",
+            "Biography",
+            "ThoughtDump",
+            "FutureThoughts",
+          ],
+          published: "2020-07-31",
         },
         {
-          title: "Fusce ullamcorper tellus",
+          title: "Legacy Code Spaghetti Navigation",
           description:
-            "Fusce ullamcorper tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultrices maximus. Donec non tellus non neque pellentesque fermentum. Aenean in pellentesque urna.",
-          imgUrl:
-            "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/drop.jpg",
-          id: "2"
+            "I ran into a particularly troubling experience while working through some legacy code, and wanted to outline the issues with what I found and suggest some improvements as well as touch on some lessons learned from the experience.",
+          imgUrl: "/posts/images/spaghetti.jpg",
+          id: "legacy-spaghetti-navigation",
+          tags: [
+            ".NET",
+            "C#",
+            "ProfessionalProgramming",
+            "LegacyCode",
+            "Spaghetti",
+            "Refactoring",
+            "TechnicalDebt",
+          ],
+          published: "2020-01-09",
         },
         {
-          title: "Fusce ullamcorper tellus",
+          title: "Creating an Android Game Using Unity",
           description:
-            "Fusce ullamcorper tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultrices maximus. Donec non tellus non neque pellentesque fermentum. Aenean in pellentesque urna.",
+            "I wanted to get into game development and so I followed a simple tutorial, made some fun modifications to a flappy bird clone, and published it on the play store to learn what the whole process was like.",
           imgUrl:
-            "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/drop.jpg",
-          id: "3"
+            "https://lh3.googleusercontent.com/LDy3GsVfVAoeXnY0DcPBeI3oS5jf2Mr8Sr6Nml7MDqwx8Ey2pvjqSLNjVlNmXYDqvFk=w720-h310-rw",
+          id: "unity-game-hail-bounce",
+          tags: [
+            "GameDev",
+            "Android",
+            "HailBounce",
+            "PlayStore",
+            "AbMob",
+            "Gaming",
+            "Mobile",
+          ],
+          published: "2019-06-30",
         },
         {
-          title: "Fusce ullamcorper tellus",
+          title: "About Me",
           description:
-            "Fusce ullamcorper tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultricesr tellus sed maximus rutrum. Donec imperdiet ultrices maximus. Donec non tellus non neque pellentesque fermentum. Aenean in pellentesque urna.",
-          imgUrl:
-            "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/drop.jpg",
-          id: "4"
+            "I detail some of my experiences that lead me to where I am in life, and go through how I started writing software for fun which eventually lead to my job.",
+          imgUrl: "/posts/images/boots.jpg",
+          id: "first-post-about-me-and-learning",
+          tags: [
+            "About",
+            "Biography",
+            "Learning",
+            "School",
+            "Education",
+            "Background",
+            "Blogging",
+          ],
+          published: "2018-08-23",
         },
-        {
-          title: "Donec vitae suscipit lectus, a luctus diam.",
-          description:
-            "Donec vitae suscipit lectus, a luctus diam. Proin vitae felis gravida, lobortis massa sit amet, efficitur erat. Morbi vel ultrices nisi.",
-          imgUrl:
-            "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg",
-          id: "5"
-        },
-        {
-          title: "Donec vitae suscipit lectus, a luctus diam.",
-          description:
-            "Donec vitae suscipit lectus, a luctus diam. Proin vitae felis gravida, lobortis massa sit amet, efficitur erat. Morbi vel ultrices nisi.",
-          imgUrl:
-            "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg",
-          id: "6"
-        },
-        {
-          title: "Donec vitae suscipit lectus, a luctus diam.",
-          description:
-            "Donec vitae suscipit lectus, a luctus diam. Proin vitae felis gravida, lobortis massa sit amet, efficitur erat. Morbi vel ultrices nisi.",
-          imgUrl:
-            "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg",
-          id: "7"
-        },
-        {
-          title: "Donec vitae suscipit lectus, a luctus diam.",
-          description:
-            "Donec vitae suscipit lectus, a luctus diam. Proin vitae felis gravida, lobortis massa sit amet, efficitur erat. Morbi vel ultrices nisi.",
-          imgUrl:
-            "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg",
-          id: "8"
-        },
-        {
-          title: "Donec vitae suscipit lectus, a luctus diam.",
-          description:
-            "Donec vitae suscipit lectus, a luctus diam. Proin vitae felis gravida, lobortis massa sit amet, efficitur erat. Morbi vel ultrices nisi.",
-          imgUrl:
-            "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg",
-          id: "9"
-        },
-        {
-          title: "Vestibulum condimentum quam",
-          description:
-            "At sagittis sapien vulputate. Vivamus laoreet lacus id magna rutrum dapibus. Donec vel pellentesque arcu. Maecenas mollis odio tempus felis elementum commodo.",
-          imgUrl:
-            "https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/plane.jpg",
-          id: "10"
-        }
-      ]
+      ],
     };
-  }
+  },
 };
 </script>
 
 <style scoped>
-
 </style>

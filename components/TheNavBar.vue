@@ -92,19 +92,19 @@ export default {
     drawer: false,
     items: [
       { text: "Home", link: "/" },
-      // { text: "Blog", link: "/Blog" },
+      { text: "Blog", link: "/Blog" },
       { text: "Skills", link: "/Skills" },
       { text: "Projects", link: "/Projects" },
       { text: "About", link: "/About" },
-    ]
+    ],
   }),
   props: {
-    source: String
+    source: String,
   },
   methods: {
     hideDrawerIfSmallWindow() {
       this.drawer = window.innerWidth > 800;
-    }
+    },
   },
   mounted() {
     this.hideDrawerIfSmallWindow();
@@ -112,8 +112,8 @@ export default {
   components: {
     TheFooter,
     RandomQuote,
-    Social
-  }
+    Social,
+  },
 };
 </script>
 
