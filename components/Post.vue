@@ -1,6 +1,5 @@
 <template>
   <v-flex xs12 md6 lg4>
-    <!-- <nuxt-link :to="`/post/${post.id}`"> -->
     <v-card class="pb-2">
       <v-card-media class="white--text" height="170px" :src="post.imgUrl">
         <v-container fill-height>
@@ -30,7 +29,6 @@
         <v-btn flat :href="`/post/${post.id}`">Read More</v-btn>
       </v-card-actions>
     </v-card>
-    <!-- </nuxt-link> -->
   </v-flex>
 </template>
 
