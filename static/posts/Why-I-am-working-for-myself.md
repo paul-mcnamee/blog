@@ -24,4 +24,8 @@ I had began to recognize that I was mostly doing the same thing and not really l
 
 Through the magic of online content distribution platforms I feel like I can help a lot of people do what I was able to do, and teach themselves programming, or anythign that they are excited in really, and do what they love. I think life is too short to spend 8 hours a day doing something just because you need money. For me, the job was a way for me to catapult into my own ventures by allowing me a period of flexibility and ultimate freedom away from any financial stresses.
 
+## Freedom to take a break
+
+I never really felt truly disconnected from work when I was taking vacation. I don't really feel like I will be able to do that with working on my own projects once they come to fruition either, but I can still take some time now to do what is important to me and take some time off for myself. I have had a job since I was 12 years old without more than a few weeks off at a time, so I kind of just want to see what I will do with uninhibited time off as well.
+
 What would you do if you had complete freedom to do whatever you wanted for several years?
