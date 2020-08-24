@@ -24,4 +24,4 @@ I had began to recognize that I was mostly doing the same thing and not really l
 
 Through the magic of online content distribution platforms I feel like I can help a lot of people do what I was able to do, and teach themselves programming, or anythign that they are excited in really, and do what they love. I think life is too short to spend 8 hours a day doing something just because you need money. For me, the job was a way for me to catapult into my own ventures by allowing me a period of flexibility and ultimate freedom away from any financial stresses.
 
-What would you do if you had complete freedom to do whatever you wanted to without kids or pets for several years?
+What would you do if you had complete freedom to do whatever you wanted for several years?
