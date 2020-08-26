@@ -1,23 +1,19 @@
 1. refactor the blog posts
     Add filtering functionality
-        1. make the blog posts pull from a singular json file
-        2. add the blog images
-        3. make the blog images display
-        4. add keywords or tags for the blog posts
-        5. add the keywords / tags to the bottom of each blog post component on /Blog
         6. add filtering of posts by keywords and tags, click a tag allows you to see all posts under that tag.
     Add search functionality
         1. search should use one of the autocomplete components from vuetify.
             -- https://vuetifyjs.com/en/components/autocompletes#examples
         2. search should use the tags and keywords as well as the actual post content
     Add ordering to the results on the /Blog page.
-        1. initial ordering by date
         2. allow users to sort by popularity or something
     Add tracking information to the blog posts for popularity
         1. total read time
         2. article read completion percentage
         3. share buttons clicked
         4. total unique visitors
+    Switch to use Netlify CMS so it looks better
+        https://www.netlifycms.org/docs/nuxt/
 
 
     

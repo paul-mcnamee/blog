@@ -37,6 +37,23 @@ export default {
       // TODO: get the posts from json files in the static folder?
       posts: [
         {
+          title: "Why I want to work for myself",
+          description:
+            "I reflect on some of the things that lead me to working for myself, and how my time has been so far. What would you do if you had complete freedom to do whatever you wanted for several years?",
+          imgUrl: "/posts/images/BookAndCoffee.jpg",
+          id: "Why-I-am-working-for-myself",
+          tags: [
+            "SelfEmployment",
+            "Entrepeneurship",
+            "LLC",
+            "About",
+            "Biography",
+            "Motivation",
+            "Burnout",
+          ],
+          published: "2020-08-25",
+        },
+        {
           title: "Timeout, for now ... or is it?",
           description:
             "I decided to take time off from my job and wanted to reflect on my experience with creating companies and my journey into software development and entrepeneurship so far.",
