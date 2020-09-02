@@ -1,9 +1,11 @@
 <template>
   <div id="post">
     <adsbygoogle ad-slot="4499696872" />
-    <v-container>
+    <v-container class="d-flex justify-center xs12" style="maxWidth: 1000px">
       <div id="post-image"></div>
-      <div v-html="mdContent" class="contentWrapper content"></div>
+      <v-card class="ma-2 elevation-5">
+        <div v-html="mdContent" class="contentWrapper content ma-4"></div>
+      </v-card>
     </v-container>
     <adsbygoogle ad-slot="4499696872" />
   </div>
