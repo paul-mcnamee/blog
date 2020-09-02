@@ -41,7 +41,7 @@ export default {
           description:
             "I reflect on some of the things that lead me to working for myself, and how my time has been so far. What would you do if you had complete freedom to do whatever you wanted for several years?",
           imgUrl: "/posts/images/BookAndCoffee.jpg",
-          id: "Why-I-am-working-for-myself",
+          id: "why-i-am-working-for-myself",
           tags: [
             "SelfEmployment",
             "Entrepeneurship",
@@ -58,7 +58,7 @@ export default {
           description:
             "I decided to take time off from my job and wanted to reflect on my experience with creating companies and my journey into software development and entrepeneurship so far.",
           imgUrl: "/posts/images/timeout.jpg",
-          id: "I-am-taking-time-off-from-my-job",
+          id: "i-am-taking-time-off-from-my-job",
           tags: [
             "Software",
             "Working",
