@@ -1,14 +1,16 @@
-const pkg = require("./package");
-const nodeExternals = require("webpack-node-externals");
+import { defineNuxtConfig } from 'nuxt'
 
-module.exports = {
+export default defineNuxtConfig({
+  typescript: {
+    shim: false
+  },
   mode: "universal",
 
   /*
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: process.env.TITLE,
     meta: [
       {
         charset: "utf-8"
@@ -20,7 +22,7 @@ module.exports = {
       {
         hid: "description",
         name: "description",
-        content: pkg.description
+        content: process.env.DESCRIPTION,
       }
     ],
     link: [
@@ -77,77 +79,70 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ["vuetify/src/stylus/main.styl", "assets/main.css", "~/node_modules/highlight.js/styles/atom-one-dark.css"],
+  css: ['vuetify/lib/styles/main.sass', "assets/main.css",],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["@/plugins/vuetify"],
+  plugins: ["@/plugins/vuetify", '@/plugins/vue-gtag',],
+  
 
   /*
    ** Nuxt.js modules
    */
-  modules: [
+  // modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    "@nuxtjs/axios",
-    "@nuxtjs/markdownit",
-    ["@nuxtjs/google-analytics", {
-      id: "UA-120955985-2"
-    }],
-    ["@nuxtjs/google-adsense", {
-      id: "ca-pub-8331234367729530"
-    }]
-  ],
+    // "@nuxtjs/axios",
+    // TODO: ads are broken
+    // ["@nuxtjs/google-analytics", {
+    //   id: "UA-120955985-2"
+    // }],
+    // ["@nuxtjs/google-adsense", {
+    //   id: "ca-pub-8331234367729530"
+    // }]
+  // ],
 
-  markdownit: {
-    preset: "default",
-    linkify: true,
-    breaks: true,
-    use: [
-      "markdown-it-highlightjs"
-    ]
-  },
-  /*
-   ** Axios module configuration
-   */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
-
-  generate: {
-    fallback: true
-  },
+  // markdownit: {
+  //   preset: "default",
+  //   linkify: true,
+  //   breaks: true,
+  //   use: [
+  //     "markdown-it-highlightjs"
+  //   ]
+  // },
 
   /*
    ** Build configuration
    */
   build: {
-    vendor: ["axios", "vuetify"],
+    transpile: ['vuetify'],
+
+
+    // TODO: probably need to do something here for loading images the new way that vue3 does it, however that is...
+
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: "pre",
-          test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
-        });
-      }
-      if (ctx.isServer) {
-        config.externals = [
-          nodeExternals({
-            whitelist: [/^vuetify/]
-          })
-        ];
-      }
+    // extend(config, ctx) {
+    //   // Run ESLint on save
+    //   if (ctx.isDev && ctx.isClient) {
+    //     config.module.rules.push({
+    //       enforce: "pre",
+    //       test: /\.(js|vue)$/,
+    //       loader: "eslint-loader",
+    //       exclude: /(node_modules)/
+    //     });
+    //   }
 
-      const vueLoader = config.module.rules.find(
-        rule => rule.loader === "vue-loader"
-      );
-      vueLoader.options.transformAssetUrls["img"] = ["src", "data-src"];
-    }
-  }
-};
+    //   const vueLoader = config.module.rules.find(
+    //     rule => rule.loader === "vue-loader"
+    //   );
+    //   vueLoader.options.transformAssetUrls["img"] = ["src", "data-src"];
+    // }
+  },
+  vite: {
+    define: {
+      'process.env.DEBUG': true,
+    },
+  },
+});

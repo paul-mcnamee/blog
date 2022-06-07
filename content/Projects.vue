@@ -44,15 +44,10 @@
 </template>
 
 <script>
-import Project from "@/components/Project";
 // import fs from 'fs'
 // import path from 'path'
 
 export default {
-  components: {
-    Project
-  },
-
   data() {
     return {
       projects: [

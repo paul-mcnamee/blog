@@ -56,17 +56,3 @@
     </section>
   </v-container>
 </template>
-
-
-<style scoped>
-</style>
-
-<script>
-import Social from "@/components/Social";
-
-export default {
-  components: {
-    Social,
-  },
-};
-</script>

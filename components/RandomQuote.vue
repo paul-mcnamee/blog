@@ -8,10 +8,12 @@
 </template>
 
 <script>
-export default {
-  async asyncData({ $axios }) {
-    console.log("trying to get the fucking quote ");
-    const quoteData = await $axios.$get("http://quotes.rest/qod.json");
+export default defineComponent({
+  async setup() {
+    const quoteData = await $fetch("http://quotes.rest/qod.json", {method: 'GET'})
+    // await Promise.all([
+    //   useFetch("http://quotes.rest/qod.json"),
+    //   ])
     console.log("quote data ", quoteData);
     let quote = quoteData.contents.quotes[0];
     if (quote) {
@@ -27,6 +29,6 @@ export default {
       };
     }
   }
-};
+});
 </script>
 

@@ -23,15 +23,10 @@
 </template>
 
 <script>
-import Post from "@/components/Post";
 // import fs from 'fs'
 // import path from 'path'
 
 export default {
-  components: {
-    Post,
-  },
-
   data() {
     return {
       // TODO: get the posts from json files in the static folder?

@@ -13,3 +13,10 @@ dist
 
 # IDE
 .idea
+
+
+*.log*
+.nitro
+.cache
+.output
+.env
